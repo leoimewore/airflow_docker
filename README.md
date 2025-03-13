@@ -20,3 +20,12 @@
 - Containerization: Docker
 - Batch Processing: Spark
 - Google Cloud Services: DataProc
+
+# Visualizations
+
+![image](https://github.com/user-attachments/assets/5367a9d6-11da-4fd5-a155-10d0d648d364)
+![image](https://github.com/user-attachments/assets/b1897a91-9075-40cd-ac9e-93234ce5469a)
+![image](https://github.com/user-attachments/assets/e6dd3572-d04f-4d31-9753-d64e18cd7548)
+
+
+
