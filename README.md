@@ -9,3 +9,13 @@
 - Dataset link 1: https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3/about_data
 - Dataset link 2: https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if/about_data
 - Dataset link 3: https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d/about_data
+
+# Technologies
+- Workflow Orchestration: Apache Airflow
+- Data Warehouse: Big Query
+- Data Lake: Google Cloud Storage
+- Data Visualization: Looker Studio
+- Data Modeling: dbt
+- Containerization: Docker
+- Batch Processing: Spark
+- Google Cloud Services: DataProc
