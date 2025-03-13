@@ -23,7 +23,38 @@
 
 # Process
 - Leverage spark dataframe to implement schema for the pandas data.
-  ``
+  `from pyspark.sql import SparkSession
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, FloatType, TimestampType`
+
+`spark = SparkSession.builder \
+    .appName("Change CSV Schema") \
+    .getOrCreate()`
+
+
+`custom_schema = StructType([
+    StructField("crash_record_id", StringType(), True),
+    StructField("crash_date", TimestampType(), True),  # Specify TimestampType
+    StructField("weather_condition", StringType(), True),
+    StructField("lighting_condition", StringType(), True),
+    StructField("road_defect", StringType(), True),
+    StructField("injuries_total", IntegerType(), True),
+    StructField("injuries_fatal", IntegerType(), True),
+    StructField("latitude", FloatType(), True),
+    StructField("longitude", FloatType(), True)
+])`
+
+`df = spark.read \
+    .option("header", "true") \
+    .schema(custom_schema) \
+    .csv("gs://dataengineerproject-448203-bucket1/crashes/crashes.csv")`
+
+
+`df.printSchema()`
+
+
+`df.write \
+    .mode("overwrite") \
+    .parquet("gs://dataengineerproject-448203-bucket1/crashes/transformed_crashes")`
 
 # Visualizations
 
