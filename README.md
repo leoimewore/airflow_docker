@@ -21,6 +21,10 @@
 - Batch Processing: Spark
 - Google Cloud Services: DataProc
 
+# Process
+- Leverage spark dataframe to implement schema for the pandas data.
+  ``
+
 # Visualizations
 
 ![image](https://github.com/user-attachments/assets/5367a9d6-11da-4fd5-a155-10d0d648d364)
