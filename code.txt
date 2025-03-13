@@ -1,0 +1,6 @@
+docker run -v /Users/leonardisaac/airflow-docker/config/keys/my-cred.json:/root/.dbt/my-cred.json leoimewore/dbt-image:v1 /bin/sh
+
+docker run \
+  -v /Users/leonardisaac/airflow-docker/config/keys/my-cred.json:/root/.dbt/my-cred.json:ro \
+  -e GOOGLE_APPLICATION_CREDENTIALS=/root/.dbt/my-cred.json \
+  leoimewore/dbt-image:v3

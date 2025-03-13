@@ -1,0 +1,6 @@
+/config
+/logs
+/plugins
+.env
+.~
+.airflow_python_packages

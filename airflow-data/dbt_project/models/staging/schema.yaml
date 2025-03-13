@@ -1,0 +1,148 @@
+version: 2
+sources:
+  - name: staging
+    database: dataengineerproject-448203
+    schema: chicago_traffic_crashes
+
+
+    tables:
+      - name: vehicle_data
+      - name: crash_data
+      - name: person_data
+
+models:
+  - name: stg_vehicles_data
+    description: "data_for vehicles"
+    columns:
+      - name: unique_id
+        data_type: bytes
+        description: ""
+
+      - name: crash_unit_id
+        data_type: string
+        description: ""
+
+      - name: crash_record_id
+        data_type: string
+        description: ""
+
+      - name: crash_date
+        data_type: timestamp
+        description: ""
+
+      - name: unit_no
+        data_type: string
+        description: ""
+
+      - name: unit_type
+        data_type: string
+        description: ""
+
+      - name: vehicle_id
+        data_type: int64
+        description: ""
+
+      - name: make
+        data_type: string
+        description: ""
+
+      - name: model
+        data_type: string
+        description: ""
+
+  - name: stg_traffic_data
+    description: ""
+    columns:
+      - name: unique_id
+        data_type: bytes
+        description: ""
+
+      - name: crash_record_id
+        data_type: string
+        description: ""
+
+      - name: crash_date
+        data_type: timestamp
+        description: ""
+
+      - name: weather_condition
+        data_type: string
+        description: ""
+
+      - name: lighting_condition
+        data_type: string
+        description: ""
+
+      - name: road_defect
+        data_type: string
+        description: ""
+
+      - name: injuries_total
+        data_type: int64
+        description: ""
+
+      - name: injuries_fatal
+        data_type: int64
+        description: ""
+
+      - name: latitude
+        data_type: float64
+        description: ""
+
+      - name: longitude
+        data_type: float64
+        description: ""
+
+  - name: stg_persons_data
+    description: ""
+    columns:
+      - name: unique_id
+        data_type: bytes
+        description: ""
+
+      - name: person_id
+        data_type: string
+        description: ""
+
+      - name: person_type
+        data_type: string
+        description: ""
+
+      - name: crash_record_id
+        data_type: string
+        description: ""
+
+      - name: vehicle_id
+        data_type: string
+        description: ""
+
+      - name: crash_date
+        data_type: timestamp
+        description: ""
+
+      - name: sex
+        data_type: string
+        description: ""
+
+      - name: safety_equipment
+        data_type: string
+        description: ""
+
+      - name: airbag_deployed
+        data_type: string
+        description: ""
+
+      - name: age
+        data_type: int64
+        description: ""
+
+      - name: safety_equipment_updated
+        data_type: string
+        description: ""
+
+      - name: traffic_crash_date
+        data_type: timestamp
+        description: ""
+
+      
+
